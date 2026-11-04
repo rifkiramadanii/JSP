@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  /* Skema Warna JSP: Earthy Sage Green */
+  --color-background: #F4F6F5; /* Soft Ash / Off-white hijau sangat muda */
+  --color-secondary: #E1E6E3;  /* Muted Sage untuk elemen sekunder/hover */
+  --color-textmain: #1C2622;   /* Deep Forest (Abu-abu kehitaman bernuansa hijau) */
+  --color-accent: #427A5B;     /* Earthy Green untuk tombol dan tautan */
+
+  /* Custom Fonts Baru */
+  --font-sans: "DM Sans", sans-serif;
+  --font-serif: "Crimson Pro", serif;
+}
+
+body {
+  @apply bg-background text-textmain antialiased selection:bg-accent selection:text-white;
+}
